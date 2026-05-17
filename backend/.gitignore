@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Local environment files (DO NOT COMMIT SENSITIVE KEYS)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (Next.js / Node.js)
+.pnp
+.pnp.js
+core
+.eslintcache
+
+# Operating System Files
+.DS_Store
+Thumbs.db

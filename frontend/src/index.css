@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color-scheme: dark light;
+}
+
+body {
+  background-color: #0A0F1D;
+  color: #F8F9FA;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism custom classes */
+.glass {
+  background: rgba(18, 25, 47, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-accent {
+  background: rgba(242, 100, 25, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(242, 100, 25, 0.15);
+}
+
+/* Custom glow animations for premium cybersecurity vibe */
+.glow-saffron {
+  box-shadow: 0 0 25px rgba(242, 100, 25, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px rgba(58, 80, 107, 0.3);
+}
+
+/* Scanning line effect */
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #F26419, transparent);
+  animation: scan 3.5s linear infinite;
+}
+
+@keyframes scan {
+  0% { top: 0%; }
+  50% { top: 100%; }
+  100% { top: 0%; }
+}
+
+/* Ticker loop styling */
+.ticker-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-content {
+  display: inline-block;
+  animation: ticker 25s linear infinite;
+}
+
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0F1D;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C2541;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F26419;
+}
